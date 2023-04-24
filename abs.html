@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <style>
+            body{
+                background-color: #A6D0DD;
+                
+            }
+            h1,h2{
+                color: #0A4D68;
+                text-align: center;
+
+            }
+            
+        
+        #img1{
+            /* display: block;
+            margin-left: auto;
+            margin-right: auto; */
+            height: 900px;
+            width: 60%;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            width: 60%;
+        }
+        </style>
+    </head>
+<body>
+<h1> Abstract class in Java </h1>
+A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body..<br>
+Before learning the Java abstract class, let's understand the <i><b>abstraction</i></b> in Java first. 
+<h2> Abstraction </h2>
+Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details. The properties and behaviors of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.<p><br>
+Abstraction can be achieved with the following-<br>1. Abstract classes<br> 2. Interfaces
+<h2>What is Abstract class in Java?</h2>
+Java abstract class is a class that can not be initiated by itself, it needs to be subclassed by another class to use its properties. An abstract class is declared using the “abstract” keyword in its class definition. <br>
+Mentioned below are the properties/uses of Abstract class.<br>
+<p>1. In Java, just like in C++ an instance of an abstract class cannot be created, we can have references to abstract class type though. </p>
+<p>2. Like C++, an abstract class can contain constructors in Java. And a constructor of an abstract class is called when an instance of an inherited class is created.</p>
+<p>3. In Java, we can have an abstract class without any abstract method. This allows us to create classes that cannot be instantiated but can only be inherited.</p>
+<p>4. Abstract classes can also have final methods methods that cannot be overridden. </p>
+<p>5. For any abstract java class we are not allowed to create an object i.e., for an abstract class instantiation is not possible. </p>
+<p>6. Similar to the interface we can define static methods in an abstract class that can be called independently without an object. </p>
+<p>7.We can use the abstract keyword for declaring top-level classes Outer class. as well as inner classes as abstract.</p>
+<p>8. If a class contains at least one abstract method then compulsory that we should declare the class as abstract otherwise we will get a compile-time error ,If a class contains at least one abstract method then, implementation is not complete for that class, and hence it is not recommended to create an object so in order to restrict object creation for such partial classes we use abstract keyword.</p>
+<p>9. If the Child class is unable to provide implementation to all abstract methods of the Parent class then we should declare that Child class as abstract so that the next level Child class should provide implementation to the remaining abstract method.</p>
+
+<h2>When to use abstract classes and abstract methods with an example</h2>
+
+There are situations in which we will want to define a superclass that declares the structure of a given abstraction without providing a complete implementation of every method. Sometimes we will want to create a superclass that only defines a generalization form that will be shared by all of its subclasses, leaving it to each subclass to fill in the details.
+<br>Consider a classic “shape” example, perhaps used in a computer-aided design system or game simulation. 
+The base type is “shape” and each shape has a color, size, and so on. 
+From this, specific types of shapes are derived(inherited.-circle, square, triangle, 
+and so on — each of which may have additional characteristics and behaviors. 
+For example, certain shapes can be flipped. Some behaviors may be different, 
+such as when you want to calculate the area of a shape. 
+The type hierarchy embodies both the similarities and differences between the shapes. <br>
+
+
+
+<br><img  src="WT image-1.png" alt="img"><br>
+
+
+
+<h3> Code With Example </h3>
+
+<br><img id="img1" src="WT image-2.jpg" alt="Code">
+
+
+
+
+<h3><b> OUTPUT </b></h3>
+Shape constructor called<br>
+Circle constructor called<br>
+Shape constructor called<br>
+Rectangle constructor called<br>
+Circle color is Redand area is : 15.205308443374602<br>
+Rectangle color is Yellowand area is : 8.0<br>
+
+
+<h2>Conclusion</h2>
+Points to remember from this article are mentioned below:
+<ul>
+<li>An abstract class is a class that can not be initiated by itself, it needs to be subclassed by another class to use its properties.
+<li>An abstract class can be created using “abstract” keywords
+<li>We can have an abstract class without any abstract method i.e. it can have abstract and non abstract methods both.
+<li> Once a method is declared as abstract we need to re-define it in the derived class.
+<li>If a class contains at least one abstract method then compulsory should declare a class as abstract 
+</ul>
+
+
+
+
+
+</body>
+</html>

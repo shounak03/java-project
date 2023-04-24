@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Interfaces</title>
+    <style>
+        body{
+            background-color: #A6D0DD;
+            
+        }
+        h1,h2,h3{
+            color: #0A4D68;
+            text-align: center;
+
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 500px;
+            width: 60%;
+           
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<h1>INTERFACE</h1>
+	</header>
+			<p>An interface in Java programming language is defined as an abstract type used to specify the behavior of a class. It is a mechanism to achieve abstraction.</p>
+            <p>An interface is just like a class which contains only abstract methods.</p>
+			<p><ul>
+				<li>Interface methods are by default <b>public and abstract</b>.</li>
+				<li>Interface variables are by default <b>public, static and final</b>.</li>
+				</ul>
+			</p>
+			<p><img src="psvm.jpg" alt="Public-Static image"></p>
+            <p>In Java, interfaces can be implemented and extended to create new interfaces that inherit properties and methods from existing interfaces.</p>
+			<p><img src="class-interface.jpg" alt="Class-Interface diagram"></p>
+<hr>
+		<h2>Extending an interface</h2>
+        <p>An interface can extend other one or more interfaces. </p>
+		<p>Syntax:</p>
+        <p><img src="syntax.jpg" alt="Syntax for extending"></p>
+        <p>It can be used to achieve multiple inheritance.</p>
+        <p><img src="multiple inheritence.jpg" alt="Multiple Inheritance using Interface"></p>
+        <hr>
+		<h2>Implementing an interface</h2>
+        <p>
+            A class can implement more than one interface.
+            <p>Syntax: <br><img src="example.jpg" alt="Syntax for implementing"></p>
+            <i><b>Note: </b>A class that implements the interface must implement all the methods in the interface.</i>
+        </p>
+        <hr>
+        <h3>Advantages of Interfaces in Java</h3>
+        <p><ul>
+            <li>Interfaces provide a way to abstract the implementation details of a class from its public interface. This allows the class to be used in a variety of different contexts without exposing its internal workings.</li>
+            <li>In Java, multiple inheritances is not allowed, however, you can use an interface to make use of it as you can implement more than one interface.</li>
+            <li>Interfaces enable loose coupling between different parts of an application. By depending on interfaces rather than concrete classes, different parts of the application can be developed independently and can be easily swapped out or replaced as needed.</li>
+            <li>Interfaces allow different classes to implement the same interface, which enables polymorphism. This means that objects of different classes can be treated interchangeably if they implement the same interface.</li>
+        </ul></p>
+        <hr>
+        <h3>Differences between Abstract classes and Interfaces in Java</h3>
+        <p><ol>
+            <li>Interface contains only abstract method, while abstract class contains both as abstract and non-abstract methods.</li>
+            <li>Interface supports multiple inheritance, while abstract class does not support multiple inheritance.</li>
+            <li>By default interface methods are public and abstract but there are no such restrictions on abstract class method modifiers.</li>
+            <li>Interface does not allow users to create constructors, while abstract class allows constructors.</li>
+        </ol></p>
+        <hr>
+        <h3>Points to keep in mind while using Interfaces</h3>
+        <p><ul>
+            <li>It is not possible to declare instance variables inside the interface because variables are public static final by default.</li>
+            <li>Constructors and main method are not allowed inside the interface</li>
+            <li>Static, final, private methods declaration are not possible inside the interface.</li>
+        </ul></p>
+        <hr>
+        <p>
+		<h3>Conclusion</h3>
+			Interfaces are a powerful tool in programming that allow for features like abstraction, polymorphism and loose coupling. By using interfaces, developers can create more flexible and maintainable code that is easier to test and debug, and improve the overall design and structure of an application.</p>
+	
+</body>
+</html>

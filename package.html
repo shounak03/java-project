@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #A6D0DD;
+            margin: 8px;
+    padding: 8px;
+            
+        }
+        h1,h2,h3{
+            color: #0A4D68;
+            text-align: center;
+
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            width: 60%;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>PACKAGE</h1>
+
+    <h3>What is a Java Package?</h3>
+    
+<p>A package in Java is a mechanism for organizing related classes, interfaces, and 
+sub-packages. It provides a way to group related classes and interfaces together 
+so that they can be easily managed and reused in different programs.</p>
+
+<h3>Creating a Java Package</h3>
+
+<p>To create a Java package, you need to follow these steps: </p>
+
+<p>1. Create a new directory with the name of your package.</p>
+
+<p>2. Create your Java source files inside the directory </p>
+
+<p>3. Add the package declaration at the top of each Java source file, using the following syntax: </p>
+
+ex:- package com.example.mypackage; <br>
+
+<p>This declares that the classes in this file belong to the "mypackage" sub-package of the "com.example" package.
+</p>
+<h3>Using a Java Package</h3>
+
+<p>To use a Java package in your code, you need to follow these steps: </p>
+
+<p>1. Import the package using the import statement at the top of your Java source file, like this:</p>
+
+import com.example.mypackage.*; <br>
+
+<p>This imports all the classes and interfaces in the "mypackage" sub-package of the "com.example" package. <br>
+
+ Use the classes and interfaces from the package in your code by referencing them using their fully qualified names, like this: </p>
+
+com.example.mypackage.MyClass obj = new com.example.mypackage.MyClass(); <br>
+
+<p>This creates a new instance of the "MyClass" class from the "mypackage" sub-package of the "com.example" package.
+
+    
+
+
+
+
+
+<h3>Types of Java Packages</h3>
+
+<img src="package1.png" alt="">
+
+<p>1.Built-in packages: These are the packages that are provided by the Java development kit (JDK). They contain commonly used classes and interfaces that can be used directly in Java programs without the need for any additional coding. Some examples of built-in packages include java.lang, java.util, java.io, etc.
+    <br>Example code:
+    </p>
+
+    <p>
+        import java.util.*;<br>
+        public class MyProgram { <br>
+            public static void main(String[] args) { <br>
+      Scanner input = new Scanner(System.in); <br>
+      System.out.print("Enter a number: "); <br>
+      int num = input.nextInt(); <br>
+      System.out.println("The square of the number is: " + Math.pow(num, 2));<br>
+   } <br>
+}
+    </p>
+
+<p><br>
+    <img src="package3.jpg" alt=""> <br>
+    2.User defined package: User-defined packages: These are the packages that are created by the user to organize their own code into logical groups. They are created using the package keyword followed by the package name in the beginning of the source file. User-defined packages can contain multiple classes, interfaces, and sub-packages.
+Example code:
+file: com/example/myapp/MyClass.java
+</p>
+
+<p>
+    package com.example.myapp; <br>
+
+public class MyClass {<br>
+    public void printMessage() { <br>
+        System.out.println("Hello, world!"); <br>
+    } <br>
+} <br>
+In this example, we've created a package named com.example.myapp, and a class named MyClass inside it. The class contains a single 
+method printMessage() that prints the message "Hello, world!" to the console.
+
+<p>
+    To use this class in another source file, we would import it using the following 
+    statement: <br>
+
+import com.example.myapp.MyClass; <br>
+
+public class MyApp { <br>
+    public static void main(String[] args) { <br>
+        MyClass obj = new MyClass(); <br>
+        obj.printMessage(); <br>
+    } <br>
+} <br>
+<p>In this code, we've imported the MyClass class from the com.example.myapp package, 
+    and created an instance of the class named obj. We then call the printMessage() 
+    method on the obj instance, which prints the message "Hello, world!" to the console.</p>
+</p>
+</p>
+    
+<table>
+    <ul><h3>Benefits of Using Java Packages</h3>
+    <li><p>Organization: Packages provide a way to organize your code into logical groups, making it easier to manage and maintain.</p></li>
+    <li><p>Encapsulation: Packages help enforce encapsulation by providing a 
+        way to hide implementation details from other parts of your code.</p></li>
+    
+    <li><p>Reusability: Packages allow you to reuse code across different 
+        programs, reducing development time and effort.</p></li>
+
+    <li><p>Name conflicts: Packages help avoid name conflicts by providing a way to use the 
+        same class or interface name in different packages.</p></li>
+    </ul>
+</table>
+</body>
+</html>
