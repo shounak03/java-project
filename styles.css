@@ -6,14 +6,14 @@ body{
     padding: 8px;
 }
 .btn {
-    /*text-emphasis-color: #0A4D68;*/
+    
     background-color: #0A4D68;
     margin: 20px;
     display: inline-block;
     height: 80px;
     width: 400px;
     border: 3px solid black;
-    /* border-radius: 10%; */
+    
 }
 .btn1{
     background-color: #0A4D68;
@@ -21,8 +21,8 @@ body{
     display: inline-block;
     height: 100px;
     width: 1100px;
-    /* border: 3px solid black; */
-    /* border-radius: 10%; */
+     border: 3px solid black; 
+     
 }
 h1{
     color: aliceblue;
